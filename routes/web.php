@@ -39,5 +39,9 @@ Route::get('/order', function () {
     return Inertia::render('Order');
 });
 
+Route::get('/admin-dashboard', function () {
+    return Inertia::render('AdminDashboard');
+});
+
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
